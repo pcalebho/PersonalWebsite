@@ -44,14 +44,10 @@ export default function EyesTracker() {
   }, [currentEmotionIndex]);
 
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-900">
-      <div className="flex justify-between transition-all duration-500" style={{ width: currentEmotion.spacing }}>
-        <div className="eye bg-white rounded-full flex justify-center items-center transition-all duration-500"
-             style={{ width: currentEmotion.width, height: currentEmotion.height, borderRadius: currentEmotion.borderRadius }}>
-        </div>
-        <div className="eye bg-white rounded-full flex justify-center items-center transition-all duration-500"
-             style={{ width: currentEmotion.width, height: currentEmotion.height, borderRadius: currentEmotion.borderRadius }}>
-        </div>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: '#222' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', transition: 'width 0.5s ease', width: currentEmotion.spacing }}>
+        <div className="eye" style={{ backgroundColor: 'white', borderRadius: currentEmotion.borderRadius, width: currentEmotion.width, height: currentEmotion.height, display: 'flex', justifyContent: 'center', alignItems: 'center', transition: 'border-radius 0.5s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease' }}></div>
+        <div className="eye" style={{ backgroundColor: 'white', borderRadius: currentEmotion.borderRadius, width: currentEmotion.width, height: currentEmotion.height, display: 'flex', justifyContent: 'center', alignItems: 'center', transition: 'border-radius 0.5s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease' }}></div>
       </div>
     </div>
   );
