@@ -44,7 +44,7 @@ export default function EyesTracker() {
   }, [currentEmotionIndex]);
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: '#222', position: 'fixed', top: 0, left: 0}}>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', width: '100vw', backgroundColor: '#222', position: 'fixed', top: 0, left: 0}}>
       <div style={{ display: 'flex', justifyContent: 'space-between', transition: 'width 0.5s ease', width: currentEmotion.spacing }}>
         <div className="eye" style={{ backgroundColor: 'white', borderRadius: currentEmotion.borderRadius, width: currentEmotion.width, height: currentEmotion.height, display: 'flex', justifyContent: 'center', alignItems: 'center', transition: 'border-radius 0.5s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease' }}></div>
         <div className="eye" style={{ backgroundColor: 'white', borderRadius: currentEmotion.borderRadius, width: currentEmotion.width, height: currentEmotion.height, display: 'flex', justifyContent: 'center', alignItems: 'center', transition: 'border-radius 0.5s ease, transform 0.3s ease, width 0.5s ease, height 0.5s ease' }}></div>
