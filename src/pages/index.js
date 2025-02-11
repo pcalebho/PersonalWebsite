@@ -7,6 +7,9 @@ export default function Home() {
       <Link href="/about">
         About
       </Link>
+      <Link href="/roboteyes">
+        Robot Eyes
+      </Link>
     </div>
   );
 }
