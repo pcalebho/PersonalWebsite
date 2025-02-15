@@ -1,9 +1,13 @@
+import mdx from "@next/mdx";
+
+const withMDX = mdx({
+  extension: /\.mdx?$/,
+  options: {},
+});
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Uncomment the following line to build a static site.
-  // output: "export",
-
-  reactStrictMode: true,
+  pageExtensions: ["ts", "tsx", "md", "mdx"],
 };
 
-export default nextConfig;
+export default withMDX(nextConfig);
