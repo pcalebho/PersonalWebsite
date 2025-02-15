@@ -2,6 +2,7 @@ import { Flex } from "@/once-ui/components";
 import MasonryGrid from "@/components/gallery/MasonryGrid";
 import { baseURL } from "@/app/resources";
 import { gallery, person } from "@/app/resources/content";
+import React from "react";
 
 export async function generateMetadata() {
   const title = gallery.title;
